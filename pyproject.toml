@@ -1,0 +1,37 @@
+[project]
+name = "meeting-agent"
+version = "0.1.0"
+description = "Turns meeting transcripts into approved Jira tickets, Slack updates and summary emails"
+authors = [
+    { email = "srujanpv641@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google-api-python-client>=2.201.0",
+    "google-auth>=2.62.0",
+    "pydantic>=2.14.2",
+    "pydantic-settings>=2.16.2",
+    "python-docx>=1.2.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"
+
+[project.scripts]
+meeting-agent = "meeting_agent.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
