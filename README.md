@@ -2,9 +2,9 @@
 
 An agent that turns meeting transcripts into Jira-ready tickets, Slack status updates and summary emails, with human approval before anything goes out.
 
-> **Status: in progress (2 of 8 stages built).** The watcher can detect and read transcripts, but the agent doesn't extract action items or send anything yet. No accuracy or time-saving results have been measured so far.
+> **Status: in progress.** The agent reads transcripts, drafts tickets and waits for human approval, but it sends only to mock services so far. Live Google Drive hasn't been tested. Time savings haven't been measured yet.
 
-## How it will work
+## How it works
 
 ```mermaid
 flowchart LR
@@ -23,11 +23,11 @@ flowchart LR
 |---|---|---|
 | 1 | Foundation: data formats, settings, SQLite storage | Done |
 | 2 | Drive trigger: detect, read and retry transcripts | Built; not yet run against live Google Drive |
-| 3 | LangGraph extraction with OpenAI | Not started |
-| 4 | Quality checks: duplicates, hallucinations, deadlines | Not started |
-| 5 | Human approval page in Streamlit | Not started |
-| 6 | Jira, Slack and Gmail outputs, mocks first | Not started |
-| 7 | Evaluation on 120 labelled transcripts | Not started |
+| 3 | LangGraph extraction with OpenAI | Done |
+| 4 | Quality checks: duplicates, hallucinations, deadlines | Built; accuracy not measured yet |
+| 5 | Human approval page in Streamlit | Done |
+| 6 | Jira, Slack and Gmail outputs | Mocks only; real services not connected |
+| 7 | Evaluation against human-labelled AMI meetings | First official result below |
 | 8 | Time-saving measurement, Docker, demo | Not started |
 
 ## What works today
@@ -36,6 +36,28 @@ flowchart LR
 - **File formats:** `.txt`, `.docx`, `.vtt` (Teams and Zoom styles) and Google Docs.
 - **No repeat runs:** each version of a file is processed once, including across restarts.
 - **Failure handling:** unreadable files are marked failed with a reason. Runs that crash or hit a temporary error are retried, up to 3 attempts in total.
+- **Extraction:** finds action items, owners and deadlines, and splits long meetings into chunks.
+- **Quality checks:** every item must quote the transcript, duplicates are merged, deadlines are validated, and a second model pass rejects weak items.
+- **Human approval:** nothing is sent until a person approves it, and paused runs survive restarts.
+- **Cost limit:** any OpenAI call that could cost more than $0.50 is refused before it is sent.
+
+## Evaluation
+
+Scored on 86 unseen meetings from the [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/) (CC BY 4.0), most of them role-played product design meetings. Agent tickets were compared with action items written by human annotators.
+
+| Metric | Official test (86 unseen meetings) | Tuning set (21 meetings) |
+|---|---|---|
+| Tickets drafted | 272 | 63 |
+| Tickets matching a human item | 143 | 34 |
+| **Precision** | **52.6%** | 54.0% |
+| Human items | 220 | 50 |
+| Human items found | 130 | 34 |
+| **Recall** | **59.1%** | 68.0% |
+| **F1** | **55.6%** | 60.2% |
+| Total OpenAI cost (upper bound) | $0.31 | $0.08 |
+| Most expensive call (upper bound) | $0.004 | $0.003 |
+
+An AI judge decided whether a ticket and a human item described the same task. The human items come from short summaries, so real tasks they omit count as wrong and precision is likely understated. The prompts were tuned only on 21 separate meetings. See `backend/evaluation/`.
 
 ## Getting started
 
@@ -50,14 +72,14 @@ uv run pytest
 
 ### Try it without Google credentials
 
-This reads a local folder in place of Drive. Each transcript is only logged for now, and is marked as completed in the database.
+This reads a local folder in place of Drive and sends to mock services. Add `OPENAI_API_KEY` and `OPENAI_MODEL` to `.env` first (`cp .env.example .env`). Each transcript uses paid OpenAI calls, at a fraction of a cent per call for `gpt-6-luna`.
 
 ```bash
-SETTLE_SECONDS=0 DATABASE_PATH=data/demo.db \
-  uv run meeting-agent watch --once --local-folder samples/transcripts
+SETTLE_SECONDS=0 uv run meeting-agent watch --once --local-folder backend/samples/transcripts
+uv run streamlit run frontend/app.py --server.address 127.0.0.1
 ```
 
-Run it a second time and nothing is processed again, because those versions are already recorded in `data/demo.db`.
+Review the drafts on the page at <http://127.0.0.1:8501>. It has no login, so keep it on your own machine.
 
 ### Use a real Drive folder
 
@@ -71,24 +93,36 @@ Only files directly inside the folder are read, not subfolders.
 
 ## Configuration
 
-Settings are read from `.env`, and [.env.example](.env.example) lists them all. It also has placeholders for OpenAI, Jira, Slack and Gmail, which the code doesn't use yet. The `.gitignore` file excludes `.env` and credential files, so keep your secrets there.
+Settings are read from `.env`, and [.env.example](.env.example) lists them all. It also has placeholders for Jira, Slack and Gmail, which the code doesn't use yet. The `.gitignore` file excludes `.env` and credential files, so keep your secrets there.
 
 ## Project layout
 
 ```text
-src/meeting_agent/
-  cli.py        command-line entry point
-  config.py     settings
-  drive.py      Google Drive client and local folder stand-in
-  parsers.py    converts each file format to plain text
-  schemas.py    data formats for transcripts, action items and tickets
-  storage.py    SQLite storage
-  watcher.py    polling, retries and failure handling
-samples/        real meeting transcripts for testing
-scripts/        data import tools
-tests/          test suite
+backend/
+  meeting_agent/
+    cli.py        command-line entry point
+    config.py     settings
+    drive.py      Google Drive client and local folder stand-in
+    llm.py        OpenAI calls with the per-call cost limit
+    outputs.py    Jira, Slack and email clients (mocks for now)
+    parsers.py    converts each file format to plain text
+    pipeline.py   LangGraph workflow
+    quality.py    duplicate, hallucination and deadline checks
+    schemas.py    data formats for transcripts, action items and tickets
+    service.py    connects the parts together
+    storage.py    SQLite storage
+    watcher.py    polling, retries and failure handling
+  samples/        real meeting transcripts for testing
+  scripts/        data import tools
+  tests/          test suite
+  evaluation/     scoring against human-labelled meetings
+frontend/
+  app.py          Streamlit approval page
+database/
+  schema.sql      table definitions
+.claude/skills/   how-to guides for each part of the project
 ```
 
 ## Sample data
 
-[samples/transcripts](samples/transcripts) holds 9 meetings converted from [QMSum](https://github.com/Yale-LILY/QMSum) (MIT licence). See [samples/README.md](samples/README.md) for details.
+[backend/samples/transcripts](backend/samples/transcripts) holds 9 meetings converted from [QMSum](https://github.com/Yale-LILY/QMSum) (MIT licence). See [backend/samples/README.md](backend/samples/README.md) for details.

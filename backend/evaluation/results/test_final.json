@@ -1,0 +1,2741 @@
+{
+ "summary": {
+  "meetings": 86,
+  "tickets": 272,
+  "correct": 143,
+  "precision": 0.5257,
+  "reference_items": 220,
+  "reference_found": 130,
+  "recall": 0.5909,
+  "f1": 0.5564,
+  "total_cost_usd_at_most": 0.3093,
+  "max_call_cost_usd_at_most": 0.004
+ },
+ "meetings": [
+  {
+   "meeting": "ES2002a",
+   "gold": [
+    "The industrial designer will work on the working design of the remote.",
+    "The user interface designer will work on the technical functions of the remote.",
+    "The marketing executive will work on what requirements the remote has to fulfill"
+   ],
+   "tickets": [
+    {
+     "summary": "Develop the remote control\u2019s working design.",
+     "owner": "Industrial Designer",
+     "quote": "Um so inbetween now and then , um as the industrial designer , you're gonna be working on you know the actual working design of it so y you know what you're doing there",
+     "matched": "The industrial designer will work on the working design of the remote."
+    },
+    {
+     "summary": "Define the remote control\u2019s technical functions.",
+     "owner": "User Interface Designer",
+     "quote": "Um for user interface , technical functions , I guess that's you know like what we've been talking about , what it'll actually do .",
+     "matched": "The user interface designer will work on the technical functions of the remote."
+    },
+    {
+     "summary": "Determine the requirements the remote control must fulfil.",
+     "owner": "Marketing Expert",
+     "quote": "Um and uh marketing executive , you'll be just thinking about what it actually what , you know , what requirements it has to has to fulfil",
+     "matched": "The marketing executive will work on what requirements the remote has to fulfill"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2002c",
+   "gold": [
+    "Some team members will design a prototype of the remote"
+   ],
+   "tickets": [
+    {
+     "summary": "Check whether the materials can be used in combination.",
+     "owner": "Industrial Designer",
+     "quote": "I could check back for you , but I don't think you can actually use them in a combination ,",
+     "matched": null
+    },
+    {
+     "summary": "Work with Play-doh on the design.",
+     "owner": null,
+     "quote": "uh I know that the designers are gonna be working with Play-doh on that.",
+     "matched": "Some team members will design a prototype of the remote"
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "ES2003a",
+   "gold": [
+    "The team will decide how the user interface will work"
+   ],
+   "tickets": [
+    {
+     "summary": "Write up the meeting\u2019s decisions and send them to everyone.",
+     "owner": "Adam Duguid",
+     "quote": "Um , right . I'd say we finish this one up , we get started , I'll get in , I'll write up what we've um kind of quickly done , and I'll get that out to everybody .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2003c",
+   "gold": [
+    "The industrial designer and user interface designer will work on a prototype.",
+    "The marketing expert will work on a product evaluation"
+   ],
+   "tickets": [
+    {
+     "summary": "Look into the costs of bulk buying and production.",
+     "owner": null,
+     "quote": "We have to look into the costs of those .",
+     "matched": null
+    },
+    {
+     "summary": "Decide which buttons to use.",
+     "owner": null,
+     "quote": "Um we have to decide on what buttons we're gonna use .",
+     "matched": null
+    },
+    {
+     "summary": "Work with the Industrial Designer on prototyping the physical design in clay.",
+     "owner": null,
+     "quote": "you've got yourself and the Industrial Designer gonna be working quite closely at this stage 'cause it'll be hard not to , obviously . Um looking from prototyping of some des description using clay .",
+     "matched": "The industrial designer and user interface designer will work on a prototype."
+    },
+    {
+     "summary": "Look into product evaluation.",
+     "owner": null,
+     "quote": "you're gonna look at product evaluation.",
+     "matched": "The marketing expert will work on a product evaluation"
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "ES2004a",
+   "gold": [
+    "The group will prepare for the functional design meeting to discuss the components and functions of the product."
+   ],
+   "tickets": [
+    {
+     "summary": "Work individually on the product\u2019s functional design, including its needs, effects, and how it will achieve them.",
+     "owner": null,
+     "quote": "Um , first is the functional design , um this is where we all go off and do our individual work , um what needs need to be fulfilled by the product , um what effects the product has to have and how it's actually going to do that .",
+     "matched": null
+    },
+    {
+     "summary": "Prepare another PowerPoint presentation.",
+     "owner": "Sarah",
+     "quote": "and I get to do another fantastic PowerPoint presentation .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2004b",
+   "gold": [
+    "The Marketing Expert will research consumers' opinions on instruction manuals."
+   ],
+   "tickets": [
+    {
+     "summary": "Look into the company logo and how it could be incorporated into the product design.",
+     "owner": "User Interface Designer",
+     "quote": "Can you look into the company logo ? Um , things that are associated with the company in view to trying to incorporate that into the design of the product",
+     "matched": null
+    },
+    {
+     "summary": "Develop five or six design options.",
+     "owner": null,
+     "quote": "But we can like think of five , six designs .",
+     "matched": null
+    },
+    {
+     "summary": "Review instruction manuals and identify issues to guide the marketing work.",
+     "owner": "Marketing Expert",
+     "quote": "I think you might get guidance , but um I th Instruction manuals , 'cause there tends to be a",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2004d",
+   "gold": [
+    "The group will suggest to the management that speech recognition remain in the product design.",
+    "All members will fill out a final evaluation questionnaire."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "ES2005a",
+   "gold": [
+    "The Marketing Expert will examine the features and design of competitors' remotes.",
+    "The User Interface Designer will research possible shapes and colors for the device.",
+    "The Industrial Designer will research possible materials and the necessary internal components of the device."
+   ],
+   "tickets": [
+    {
+     "summary": "Research competing remote controls and their designs.",
+     "owner": "Marketing Expert",
+     "quote": "And you look at competition\nMarketing Expert",
+     "matched": "The Marketing Expert will examine the features and design of competitors' remotes."
+    },
+    {
+     "summary": "Research how the remote control can be manufactured and what materials are available.",
+     "owner": "Industrial Designer",
+     "quote": "and you could look into um basically how how it's made I_E_ like how you make it all in one , how what sort of materials are available to you whatever .",
+     "matched": "The Industrial Designer will research possible materials and the necessary internal components of the device."
+    }
+   ],
+   "found": [
+    0,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2006a",
+   "gold": [
+    "The marketing expert will work on user requirements specification.",
+    "The interface specialist will look at the working design.",
+    "The industrial designer will work on the technical functions design.",
+    "They will get specific instructions when they get back to their workspace."
+   ],
+   "tickets": [
+    {
+     "summary": "Think of specific, unusual features to include in the remote control.",
+     "owner": null,
+     "quote": ", when we go away from the meeting , what specific things could be um included in this remote control that that are out of the ordinary .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the working design.",
+     "owner": "Industrial Designer",
+     "quote": "but im basically you're looking at the working design ,",
+     "matched": "The interface specialist will look at the working design."
+    },
+    {
+     "summary": "Develop the technical functions design.",
+     "owner": "User Interface Designer",
+     "quote": "you're looking at the technical functions design , and for you it's the user requirements specification",
+     "matched": "The industrial designer will work on the technical functions design."
+    },
+    {
+     "summary": "Prepare the user requirements specification.",
+     "owner": "Marketing Expert",
+     "quote": "you're looking at the technical functions design , and for you it's the user requirements specification",
+     "matched": "The marketing expert will work on user requirements specification."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2006c",
+   "gold": [
+    "The Industrial Designer will work on look and feel.",
+    "The Interface Specialist will work on user interface.",
+    "The Marketing Expert will work on the product evaluation.",
+    "The two designers will work together on developing a prototype using modeling glay and follow the instructions the group has come up.",
+    "They will get extra instructions from their personal coach"
+   ],
+   "tickets": [
+    {
+     "summary": "Work on the look-and-feel design.",
+     "owner": "Industrial Designer",
+     "quote": "the Industrial Designer over here is gonna work on the look and feel design",
+     "matched": "The Industrial Designer will work on look and feel."
+    },
+    {
+     "summary": "Work on the user interface design.",
+     "owner": "User Interface Designer",
+     "quote": "Um the User Interface Designer will work on the user interface design",
+     "matched": "The Interface Specialist will work on user interface."
+    },
+    {
+     "summary": "Work on product evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "and the Marketing Expert is going to work on product evaluation",
+     "matched": "The Marketing Expert will work on the product evaluation."
+    },
+    {
+     "summary": "Work together on the prototype using modelling clay and the agreed instructions.",
+     "owner": null,
+     "quote": "And as well as that , the two designers are going to work together on our prototype following those instructions that we've just come up with using modelling clay",
+     "matched": "The two designers will work together on developing a prototype using modeling glay and follow the instructions the group has come up."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "ES2006d",
+   "gold": [
+    "The team needs to complete the final questionaire and meeting summary."
+   ],
+   "tickets": [
+    {
+     "summary": "Send the design decision and color-cost uncertainty back to management.",
+     "owner": "Project Manager",
+     "quote": "So that's alright . We we'll leave it at that and then I'll take I can send it back to management and say we weren't quite sure about the colour , if that costs extra then we've still got some space for it",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2007b",
+   "gold": [
+    "The project manager will consult with the legal department to discuss the prevention of lawsuits from consumers claiming the remote caused RSI"
+   ],
+   "tickets": [
+    {
+     "summary": "Research medical background on repetitive-strain risks related to remote-control ergonomics.",
+     "owner": null,
+     "quote": "have a look if um there's any w any medical",
+     "matched": null
+    },
+    {
+     "summary": "Develop a few design options for the remote.",
+     "owner": null,
+     "quote": "maybe you can come up with a few with a couple of different ideas ?",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2008a",
+   "gold": [
+    "The project manager will investigate whether the team is to create a remote that is to be sued solely with televisions.",
+    "The industrial designer will work on the working design.",
+    "The user interface designer will work on technical functions.",
+    "The project manager will type up the minutes of the current meeting and e-mail those to the team members.",
+    "The project manager will e-mail her slides to the team members"
+   ],
+   "tickets": [
+    {
+     "summary": "Work on the technical functions, including button size.",
+     "owner": "Iain",
+     "quote": "The User Interface Designer , that's for . Technical functions, I guess like keeping in mind the buttons thing, the size of the buttons .",
+     "matched": "The user interface designer will work on technical functions."
+    },
+    {
+     "summary": "Gather user requirements and information about consumer needs and trends.",
+     "owner": "Jessy",
+     "quote": "Um user requirements um , so you'll be hearing about different trends , uh about different things that people need , um I guess kind of the same uh discussion that we've been having , we'll get from the actual consum s consumers .",
+     "matched": null
+    },
+    {
+     "summary": "Check whether the remote can include video-recorder functions.",
+     "owner": "Rose Lindgren",
+     "quote": "I'll look into that . If I can .",
+     "matched": "The user interface designer will work on technical functions."
+    },
+    {
+     "summary": "Prepare the agenda for the next meeting.",
+     "owner": "Rose Lindgren",
+     "quote": "I haven't gotten an agenda yet , um I'll put that together .",
+     "matched": null
+    }
+   ],
+   "found": [
+    2
+   ]
+  },
+  {
+   "meeting": "ES2008b",
+   "gold": [
+    "Each team member will complete a questionnaire and a summary.",
+    "The team members will spend time on their individual work.",
+    "The project manager will post the minutes and project documentation.",
+    "The team members will post their project documentation.",
+    "The industrial designer will work on the components concept.",
+    "The user interface designer will work on the user interface concept.",
+    "The marketing expert will work on trend watching"
+   ],
+   "tickets": [
+    {
+     "summary": "Complete the questionnaire and summary.",
+     "owner": null,
+     "quote": "Um after the meeting we're gonna each complete a sks um a questionnaire and a summaries summary . I don't know what summarisation .",
+     "matched": "Each team member will complete a questionnaire and a summary."
+    },
+    {
+     "summary": "Email the age-related numbers.",
+     "owner": "Marketing Expert",
+     "quote": "Maybe I mean if I get m more numbers , I'll e-mail you before the next meeting in terms of ages",
+     "matched": null
+    },
+    {
+     "summary": "Develop the components concept.",
+     "owner": "Industrial Designer",
+     "quote": "I_ um I_D_ Industrial Design you've your components concept , User Interface , the user interface concept , market trend wa watching .",
+     "matched": "The industrial designer will work on the components concept."
+    },
+    {
+     "summary": "Watch market trends.",
+     "owner": "Marketing Expert",
+     "quote": "I_ um I_D_ Industrial Design you've your components concept , User Interface , the user interface concept , market trend wa watching .",
+     "matched": "The marketing expert will work on trend watching"
+    }
+   ],
+   "found": [
+    0,
+    4,
+    6
+   ]
+  },
+  {
+   "meeting": "ES2008c",
+   "gold": [
+    "Two members of the team will work on creating a prototype using modeling clay.",
+    "The industrial designer will work on the look and feel of the design and will gather more information on curved and double-curved case options.",
+    "The marketing specialist will work on product evaluation.",
+    "The interface specialist will continue to work on the interface concept"
+   ],
+   "tickets": [
+    {
+     "summary": "Share the case visuals when you receive them.",
+     "owner": "Industrial Designer",
+     "quote": "Yeah . I'm not sure , but I'll let you know as soon as I get any pictures",
+     "matched": null
+    },
+    {
+     "summary": "Share any further information you receive about fruits and vegetables.",
+     "owner": "Marketing Expert",
+     "quote": "If I get any more information of fruits and vegetables , I'll let you know .",
+     "matched": null
+    },
+    {
+     "summary": "Complete the look-and-feel design.",
+     "owner": null,
+     "quote": "Um our next meeting starts in thirty minutes , um you each have things to do , look and feel design , user interface design , product evaluation , and you two are going to work together on a prototype using modelling clay .",
+     "matched": "The industrial designer will work on the look and feel of the design and will gather more information on curved and double-curved case options."
+    },
+    {
+     "summary": "Complete the user interface design.",
+     "owner": null,
+     "quote": "Um our next meeting starts in thirty minutes , um you each have things to do , look and feel design , user interface design , product evaluation , and you two are going to work together on a prototype using modelling clay .",
+     "matched": "The interface specialist will continue to work on the interface concept"
+    },
+    {
+     "summary": "Conduct the product evaluation.",
+     "owner": null,
+     "quote": "Um our next meeting starts in thirty minutes , um you each have things to do , look and feel design , user interface design , product evaluation , and you two are going to work together on a prototype using modelling clay .",
+     "matched": "The marketing specialist will work on product evaluation."
+    },
+    {
+     "summary": "Work together on a prototype using modelling clay.",
+     "owner": null,
+     "quote": "Um our next meeting starts in thirty minutes , um you each have things to do , look and feel design , user interface design , product evaluation , and you two are going to work together on a prototype using modelling clay .",
+     "matched": "Two members of the team will work on creating a prototype using modeling clay."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "ES2009a",
+   "gold": [
+    "The Industrial Designer will prepare a definition of the basic functions that the remote control device will have.",
+    "The Marketing Expert will define the needs and desires of the user.",
+    "The User Interface Designer will receive further assignments at a later time.",
+    "The Project Manager will prepare a report of the initial ideas discussed during the meeting."
+   ],
+   "tickets": [
+    {
+     "summary": "Identify the remote\u2019s basic functions.",
+     "owner": "Industrial Designer",
+     "quote": "and I'd like the um Industrial Designer to get ge think about what needs to be done , like what the basic function of it .",
+     "matched": "The Industrial Designer will prepare a definition of the basic functions that the remote control device will have."
+    },
+    {
+     "summary": "Identify what users will want from the remote.",
+     "owner": "User Interface Designer",
+     "quote": "so I need you to tell us what um we what the user's gonna want .",
+     "matched": "The Marketing Expert will define the needs and desires of the user."
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "ES2009c",
+   "gold": [
+    "The Industrial Designer, the User Interface Designer, and the Marketing Expert were instructed to work together on making the prototype of the remote control.",
+    "The Industrial Designer will build the look of the device using the new manufacturing constraints that were presented.",
+    "The User Interface Designer was assigned the task of making the design layout of the device.",
+    "The Marketing Expert was instructed to check the evaluations of the prototype."
+   ],
+   "tickets": [
+    {
+     "summary": "Forward the email about the voice recognition system.",
+     "owner": "User Interface Designer",
+     "quote": "I can pass you on that email from my uh guy in uh guy down the hall .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the basic look and feel and identify broad constraints for the non-remote remote design.",
+     "owner": "Nathan",
+     "quote": "I'd like Nathan , I'd like you to work on just the basic look and feel , what can we accomplish , um , given these parameters that we're just gonna sort of have this kind of uh non-remote remote . Um , what are our broad constraints before we deve design a prototype .",
+     "matched": "The Industrial Designer will build the look of the device using the new manufacturing constraints that were presented."
+    },
+    {
+     "summary": "Work out how to integrate the simple design, voice recognition, and side menu options in one layout.",
+     "owner": "Ron",
+     "quote": "Ron if you can figure out how probably best to lay out this idea of this simple design with the voice recognition built in and also this kind of drop down or s on the side kind of menu options simple . Somehow work out how we can get this all s in the same place .",
+     "matched": "The User Interface Designer was assigned the task of making the design layout of the device."
+    },
+    {
+     "summary": "Evaluate the product with some pilot users.",
+     "owner": "Ron",
+     "quote": "Um , and if you can check product evaluation with m some pilots and stuff .",
+     "matched": null
+    },
+    {
+     "summary": "Work together to make a prototype using prototype-building materials.",
+     "owner": null,
+     "quote": "I need you guys to work together on making a prototype , um using um prototype building materials um .",
+     "matched": "The Industrial Designer, the User Interface Designer, and the Marketing Expert were instructed to work together on making the prototype of the remote control."
+    },
+    {
+     "summary": "Send the team specific instructions.",
+     "owner": "coaches",
+     "quote": "And also um specific instructions will be sent to you by your coaches as well .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2010a",
+   "gold": [
+    "The Industrial Designer will work on the internal working design.",
+    "The User Interface Designer will work on the technical function design.",
+    "The Marketing Expert will research user requirements."
+   ],
+   "tickets": [
+    {
+     "summary": "Think about the working design.",
+     "owner": "Industrial Designer",
+     "quote": "Okay , you're going to think about the working design.",
+     "matched": "The Industrial Designer will work on the internal working design."
+    },
+    {
+     "summary": "Develop the technical functions design for the remote.",
+     "owner": "User Interface Designer",
+     "quote": "the technical fun functions design , making sure it does everything that we need the remote to do , the functionality of it , operating all those different things .",
+     "matched": "The User Interface Designer will work on the technical function design."
+    },
+    {
+     "summary": "Prepare the user requirements specification.",
+     "owner": "Courtney",
+     "quote": "And the marketing person , that's Courtney , is going to do the user requirements specification .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "ES2010b",
+   "gold": [
+    "The Industrial Designer will prepare the components concept for the device.",
+    "The User Interface Designer will prepare the interface concept for the device.",
+    "The Marketing Expert will prepare a trendwatching report."
+   ],
+   "tickets": [
+    {
+     "summary": "Discuss whether the remote will use a charger or batteries, and whether to include speech recognition.",
+     "owner": null,
+     "quote": "Okay . I I think we can make a decision about that later . Uh we'll still put that as a point that we need to discuss . So that would include battery source Power source rather . Is it going to have a charger , or is it going to be run strictly off batteries ? And we also need to deal with the issue you mentioned of speech recognition , if we want",
+     "matched": null
+    },
+    {
+     "summary": "Discuss project financing and check whether the desired features fit the budget.",
+     "owner": null,
+     "quote": "I guess , we're gonna discuss the project financing later , making sure that we can fit all of the stuff that we want to on our budget . Um .",
+     "matched": null
+    },
+    {
+     "summary": "Reply to the questionnaire and summary email.",
+     "owner": null,
+     "quote": "After this meeting we're gonna be sent a questionnaire and summary again which we need to reply to that e-mail .",
+     "matched": null
+    },
+    {
+     "summary": "Work on the components concept.",
+     "owner": "Industrial Designer",
+     "quote": "The I_D_ is going to work on the components concept , um U_I_D_ the user interface concept , and you're going to do some trend watching .",
+     "matched": "The Industrial Designer will prepare the components concept for the device."
+    },
+    {
+     "summary": "Do some trend watching.",
+     "owner": "Marketing Expert",
+     "quote": "The I_D_ is going to work on the components concept , um U_I_D_ the user interface concept , and you're going to do some trend watching .",
+     "matched": "The Marketing Expert will prepare a trendwatching report."
+    }
+   ],
+   "found": [
+    0,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2010c",
+   "gold": [
+    "The User Interface Designer and the Industrial Designer were instructed to build the prototype; the User Interface Designer will decide which buttons will be included and the Industrial Designer will focus on the look and the materials.",
+    "The Marketing Expert will prepare a prototype evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Revisit and decide the battery configuration.",
+     "owner": null,
+     "quote": "We could think about it and come back to it next meeting. We still have one more meeting .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the look-and-feel design.",
+     "owner": "Industrial Designer",
+     "quote": "The I_D_ is going to do the look and feel design, the U_I_D_ the user interface design.",
+     "matched": "The User Interface Designer and the Industrial Designer were instructed to build the prototype; the User Interface Designer will decide which buttons will be included and the Industrial Designer will focus on the look and the materials."
+    },
+    {
+     "summary": "Develop the user interface design.",
+     "owner": "User Interface Designer",
+     "quote": "The I_D_ is going to do the look and feel design, the U_I_D_ the user interface design.",
+     "matched": null
+    },
+    {
+     "summary": "Have final say on which buttons are included.",
+     "owner": "User Interface Designer",
+     "quote": "I think you're going to get a lot of , I mean , the final say on what buttons get put We'll all talk about it , but I think , that's pretty much what you're gonna do , right ?",
+     "matched": "The User Interface Designer and the Industrial Designer were instructed to build the prototype; the User Interface Designer will decide which buttons will be included and the Industrial Designer will focus on the look and the materials."
+    },
+    {
+     "summary": "Conduct product evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "And you're gonna do some product evaluation.",
+     "matched": null
+    },
+    {
+     "summary": "Work together on a prototype using modelling clay.",
+     "owner": null,
+     "quote": "Okay , and right now , the I_D_ and U_I_D_ , you two are going to work together on a prototype using modelling clay .",
+     "matched": "The User Interface Designer and the Industrial Designer were instructed to build the prototype; the User Interface Designer will decide which buttons will be included and the Industrial Designer will focus on the look and the materials."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "ES2010d",
+   "gold": [
+    "All participants will fill out a final questionnaire."
+   ],
+   "tickets": [
+    {
+     "summary": "Complete the final questionnaire and meeting summary",
+     "owner": null,
+     "quote": "Okay , we're gonna wrap this up now . Um the costs are within the budget , we evaluated the project , and now we're gonna complete the final questionnaire and meeting summary , and then we're going to have a big giant party , apparently , according to this , so",
+     "matched": "All participants will fill out a final questionnaire."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "ES2011b",
+   "gold": [
+    "All participants will fill out a questionnaire after the meeting.",
+    "The Designers and the Marketing Expert will work on their individual presentations."
+   ],
+   "tickets": [
+    {
+     "summary": "Check whether the television-only requirement excludes DVD and update the group.",
+     "owner": "Project Manager",
+     "quote": "Oh yeah . So I'll I'll check that and update you on the next",
+     "matched": null
+    },
+    {
+     "summary": "Finish the questionnaire",
+     "owner": null,
+     "quote": "everyone's gonna go finish their questionnaire",
+     "matched": "All participants will fill out a questionnaire after the meeting."
+    },
+    {
+     "summary": "Bring new ideas based on the discussion",
+     "owner": null,
+     "quote": "think about the things we've discussed and bring some new ideas to our next meeting",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "ES2011c",
+   "gold": [
+    "The Project Manager instructed the User Interface Designer and the Industrial Designer to construct the prototype.",
+    "The User Interface Designer will work on the interface and the Industrial Designer will work on the look and feel of the device.",
+    "The Marketing Expert will prepare a prototype evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Investigate how the remote can be programmed to display menus on the TV.",
+     "owner": null,
+     "quote": ", um , like , the programming , how this how they actually programme these things , and if that's",
+     "matched": null
+    },
+    {
+     "summary": "Research a technologically innovative way to make the remote feel spongy.",
+     "owner": "Industrial Designer",
+     "quote": "Um , it has to be technologically innovative so maybe again our Industrial Designer should look into that or find come up with a solution that's better than mine .",
+     "matched": null
+    },
+    {
+     "summary": "Play with play-dough.",
+     "owner": null,
+     "quote": "you two are going to be playing with play-dough .",
+     "matched": null
+    },
+    {
+     "summary": "Work on the design\u2019s look and feel and the user interface design.",
+     "owner": null,
+     "quote": "And working on the look and feel of the design and user interface design .",
+     "matched": "The User Interface Designer will work on the interface and the Industrial Designer will work on the look and feel of the device."
+    },
+    {
+     "summary": "Evaluate the product.",
+     "owner": null,
+     "quote": "And you're gonna be doing protu product evaluation .",
+     "matched": "The Marketing Expert will prepare a prototype evaluation."
+    }
+   ],
+   "found": [
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2011d",
+   "gold": [
+    "All participants will write a final report."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "ES2012c",
+   "gold": [
+    "The marketing expert will be doing the product evaulation.",
+    "The interface designer will be looking at the look, feel, and design.",
+    "The industrial specialist will be looking at how the user uses the product.",
+    "The interface designer and industrial specialist will be producing a model of the product"
+   ],
+   "tickets": [
+    {
+     "summary": "Develop the look, feel, and design.",
+     "owner": "Kate",
+     "quote": "for the next meeting Kate will be looking at the the the s the look , feel and design",
+     "matched": "The interface designer will be looking at the look, feel, and design."
+    },
+    {
+     "summary": "Work on how the user will use the product.",
+     "owner": "Kendra",
+     "quote": "Kendra the uh ho how the the user actually uses it",
+     "matched": "The industrial specialist will be looking at how the user uses the product."
+    },
+    {
+     "summary": "Evaluate the product.",
+     "owner": "Andrew",
+     "quote": "Andrew of course the the product evaluation",
+     "matched": "The marketing expert will be doing the product evaulation."
+    },
+    {
+     "summary": "Produce a model for review.",
+     "owner": null,
+     "quote": "Kate and Kendra will be producing a a model for us to uh to look at .",
+     "matched": "The interface designer and industrial specialist will be producing a model of the product"
+    },
+    {
+     "summary": "Use Plasticine to turn the discussed design into something the group can see.",
+     "owner": "Kate",
+     "quote": "um . So um b b Kate and Kendra now go away and uh pa play play with a bit of Plasticine",
+     "matched": "The interface designer and industrial specialist will be producing a model of the product"
+    },
+    {
+     "summary": "Develop a way to market the product as a concept, not just as a simple remote control.",
+     "owner": "Andrew",
+     "quote": "and um Andrew n can go away and th th think about how we can uh actually market this as a concept and not j not just a uh um a a simple remote control .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "ES2013a",
+   "gold": [
+    "The industrial designer will work on the working design.",
+    "The user interface designer will work on the technical functions design.",
+    "The marketing expert will work on the user requirements specification"
+   ],
+   "tickets": [
+    {
+     "summary": "Address user-friendliness in the remote control design.",
+     "owner": "Steph",
+     "quote": "That , Steph , is your part , is the user-friendliness .",
+     "matched": null
+    },
+    {
+     "summary": "Provide marketing research information on trendiness.",
+     "owner": "Sarah",
+     "quote": "The trendiness we'll probably go look at for some marketing research information from you , Sarah .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the working design for industrial design.",
+     "owner": "Kate",
+     "quote": "I think that's the industrial design is the first one , that's Kate , for the working design .",
+     "matched": "The industrial designer will work on the working design."
+    },
+    {
+     "summary": "Develop the technical functions design.",
+     "owner": "Steph",
+     "quote": "And user , that's you S Steph , for the technical functions design",
+     "matched": "The user interface designer will work on the technical functions design."
+    },
+    {
+     "summary": "Prepare the user requirements specification for marketing.",
+     "owner": "Sarah",
+     "quote": "and for marketing the user requirements specification.",
+     "matched": "The marketing expert will work on the user requirements specification"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2013b",
+   "gold": [
+    "The industrial designer will work on the components.",
+    "The user interface designer will work on the user interface.",
+    "The marketing expert will work on trend watching"
+   ],
+   "tickets": [
+    {
+     "summary": "Research the costs of the proposed rechargeable battery option.",
+     "owner": "Industrial Designer",
+     "quote": "Well I uh think that's a very interesting idea , but um I'm not a very good industrial designer and I don't know much about what these things cost . I'll do some research for the next meeting .",
+     "matched": null
+    },
+    {
+     "summary": "Prepare the components.",
+     "owner": "Kate",
+     "quote": "Um will be completed q questionnaire , um then we'll have some time for individual work to continue our research um and I'll put some minutes of this meeting together . Um your individual assignments are for um Kate to do the components , for you , Steph , to do the user interface and for you the trend-watching .",
+     "matched": "The industrial designer will work on the components."
+    },
+    {
+     "summary": "Work on the user interface.",
+     "owner": "Steph",
+     "quote": "Um will be completed q questionnaire , um then we'll have some time for individual work to continue our research um and I'll put some minutes of this meeting together . Um your individual assignments are for um Kate to do the components , for you , Steph , to do the user interface and for you the trend-watching .",
+     "matched": "The user interface designer will work on the user interface."
+    },
+    {
+     "summary": "Do the trend-watching.",
+     "owner": "Marketing Expert",
+     "quote": "Um will be completed q questionnaire , um then we'll have some time for individual work to continue our research um and I'll put some minutes of this meeting together . Um your individual assignments are for um Kate to do the components , for you , Steph , to do the user interface and for you the trend-watching .",
+     "matched": "The marketing expert will work on trend watching"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2013c",
+   "gold": [
+    "The marketing expert will work on a product evaluation.",
+    "The industrial designer will work on the look and feel of the design.",
+    "The user interface designer will work on the user interface design.",
+    "Two of the team members will create a prototype using modeling clay"
+   ],
+   "tickets": [
+    {
+     "summary": "Talk to manufacturing about whether a hard inner shell with a spongy cover is possible.",
+     "owner": "Industrial Designer",
+     "quote": "I'd I'd need to talk to manufacturing again about whether that's actually possible",
+     "matched": null
+    },
+    {
+     "summary": "Prepare the look-and-feel design.",
+     "owner": "Kate",
+     "quote": "the look and feel design is for Kate",
+     "matched": "The industrial designer will work on the look and feel of the design."
+    },
+    {
+     "summary": "Prepare the user interface design.",
+     "owner": "Steph",
+     "quote": "Steph gets the user interface design",
+     "matched": "The user interface designer will work on the user interface design."
+    },
+    {
+     "summary": "Conduct the product evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "you get product evaluation",
+     "matched": "The marketing expert will work on a product evaluation."
+    },
+    {
+     "summary": "Make a prototype using modelling clay.",
+     "owner": null,
+     "quote": "um to do a prototype .",
+     "matched": "Two of the team members will create a prototype using modeling clay"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "ES2013d",
+   "gold": [
+    "The team will work on a final questionnaire.",
+    "The team will work on a meeting summary.",
+    "The project manager will work on a final report"
+   ],
+   "tickets": [
+    {
+     "summary": "Complete the final questionnaire.",
+     "owner": null,
+     "quote": "we have to do the final questionnaire",
+     "matched": "The team will work on a final questionnaire."
+    },
+    {
+     "summary": "Prepare the meeting summary.",
+     "owner": null,
+     "quote": "and do the meeting summary",
+     "matched": "The team will work on a meeting summary."
+    },
+    {
+     "summary": "Present the final report.",
+     "owner": "Project Manager",
+     "quote": "I have a final report to present",
+     "matched": "The project manager will work on a final report"
+    },
+    {
+     "summary": "Write the meeting summary",
+     "owner": null,
+     "quote": "we have to do the final questionnaire and do the meeting summary , I have a final report to present , um and then we're done .",
+     "matched": "The team will work on a meeting summary."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "ES2014b",
+   "gold": [
+    "All participants will continue working on the remote functions."
+   ],
+   "tickets": [
+    {
+     "summary": "Specify a delay to allow multiple digits to be entered.",
+     "owner": "Industrial Designer",
+     "quote": "I'll put delay to allow um",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2014c",
+   "gold": [
+    "The User Interface Designer and the Industrial Designer will construct the prototype."
+   ],
+   "tickets": [
+    {
+     "summary": "Determine whether speech recognition requires a more advanced circuit board.",
+     "owner": "Industrial Designer",
+     "quote": "Um but I don't know , so that is something I'll have to look into .",
+     "matched": null
+    },
+    {
+     "summary": "Find out how much speech recognition costs.",
+     "owner": null,
+     "quote": "I assume it would cost extra , but Maybe we maybe we'll find out how much that does cost and have to decide slightly later .",
+     "matched": null
+    },
+    {
+     "summary": "Work on the Plasticine model.",
+     "owner": "Industrial Designer",
+     "quote": "I guess you two are on plasticine duty or whatever",
+     "matched": null
+    },
+    {
+     "summary": "Keep the button design simple.",
+     "owner": "User Interface Designer",
+     "quote": "are you gonna work on keeping the button design quite simple ? Just like the Just working out what we're gonna do for the next time .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "ES2014d",
+   "gold": [
+    "The team have two questionnaires and a report on the last meeting to complete before they finish."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "ES2015c",
+   "gold": [
+    "The industrial designer will work on the look-and-feel design.",
+    "The interface designer will work on the user interface design.",
+    "The industrial and interface designers will be working together using modelling clay.",
+    "The marketing expert will be evaluating the product.",
+    "Their personal coaches will give the rest of the information"
+   ],
+   "tickets": [
+    {
+     "summary": "Work on the look-and-feel design.",
+     "owner": "Poppy",
+     "quote": "Poppy will be working on the look-and-feel design .",
+     "matched": "The industrial designer will work on the look-and-feel design."
+    },
+    {
+     "summary": "Work on the user interface design.",
+     "owner": null,
+     "quote": "the user interface design , so this is where the trendy stuff comes in .",
+     "matched": "The interface designer will work on the user interface design."
+    },
+    {
+     "summary": "Evaluate the product.",
+     "owner": null,
+     "quote": "And you'll be evaluating the product .",
+     "matched": "The marketing expert will be evaluating the product."
+    },
+    {
+     "summary": "Work with Tara using modelling clay.",
+     "owner": "Poppy",
+     "quote": "Poppy and Tara will have to work together , using modelling clay .",
+     "matched": "The industrial and interface designers will be working together using modelling clay."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "ES2016a",
+   "gold": [
+    "The marketing expert will find out what the most universally appealing remote control on the market is.",
+    "The marketing expert will research user preferences"
+   ],
+   "tickets": [
+    {
+     "summary": "Research what people want.",
+     "owner": "marketing",
+     "quote": "And then marketing will look and see what uh what people want .",
+     "matched": "The marketing expert will research user preferences"
+    },
+    {
+     "summary": "Plan a better, more prepared meeting.",
+     "owner": "Project Manager",
+     "quote": "And Project Manager will design a better meeting for next time around , be a little bit more prepared .",
+     "matched": null
+    }
+   ],
+   "found": [
+    1
+   ]
+  },
+  {
+   "meeting": "ES2016b",
+   "gold": [
+    "The industrial designer will work on components.",
+    "The team will explore the option of a two-piece remote.",
+    "The user interface designer will explore how well a rounded, ergonomic remote and a two-piece remote work with the user.",
+    "The marketing expert will examine trend watching reports"
+   ],
+   "tickets": [
+    {
+     "summary": "Review the remote\u2019s appearance.",
+     "owner": "User Interface Designer",
+     "quote": "I'll yeah I'll have a look , try look at the actual appearance in the next break .",
+     "matched": null
+    },
+    {
+     "summary": "Monitor trends and identify new information for the next meeting.",
+     "owner": "Marketing Expert",
+     "quote": "shall we work on you're watching trends",
+     "matched": "The marketing expert will examine trend watching reports"
+    },
+    {
+     "summary": "Work on the components for the two-piece remote concept.",
+     "owner": "Manuel",
+     "quote": "Manuel you're going to work on the components",
+     "matched": "The industrial designer will work on components."
+    },
+    {
+     "summary": "Assess how both concepts work for users.",
+     "owner": "Ryan",
+     "quote": "And Ryan you work on um how how well they'll work with the us with the user",
+     "matched": "The user interface designer will explore how well a rounded, ergonomic remote and a two-piece remote work with the user."
+    }
+   ],
+   "found": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "IS1000a",
+   "gold": [
+    "The interface designer will work on a general design.",
+    "The industrial designer will work on the technica function design.",
+    "The marketing expert will think about user requirements."
+   ],
+   "tickets": [
+    {
+     "summary": "Develop a general technical functional design for the remote control, keeping it flexible for possible additional functions.",
+     "owner": null,
+     "quote": "well , uh , you wor yes , work on a design , keep it general , I mean so w we will be still fle flexible with maybe adding some functions",
+     "matched": "The industrial designer will work on the technica function design."
+    },
+    {
+     "summary": "Consider the product requirements, including whether it should support internet or remain a basic television interface.",
+     "owner": null,
+     "quote": "And uh you and you and uh uh uh well , think about requirements , eh ? Does it need internet , or or do do we stay at",
+     "matched": "The marketing expert will think about user requirements."
+    }
+   ],
+   "found": [
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1000b",
+   "gold": [
+    "The industrial designer will try to find out which components are needed.",
+    "The interface designer will get more specific user interface content.",
+    "The marketing expert will look at what trends are in this type of market"
+   ],
+   "tickets": [
+    {
+     "summary": "Identify the components needed for the universal remote.",
+     "owner": "Industrial Designer",
+     "quote": "So given we are going for this uh uh universal type uh m maybe it is good when you try to find out which components you therefore need and",
+     "matched": "The industrial designer will try to find out which components are needed."
+    },
+    {
+     "summary": "Develop more specific user interface content.",
+     "owner": "User Interface Designer",
+     "quote": "y you will try to get more specific uh user interface content",
+     "matched": "The interface designer will get more specific user interface content."
+    },
+    {
+     "summary": "Research trends in the universal remote market.",
+     "owner": "Marketing Expert",
+     "quote": "and uh maybe you can look on on what trends are in this uh",
+     "matched": "The marketing expert will look at what trends are in this type of market"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1000c",
+   "gold": [
+    "The marketing expert will look for the cost inventories of other devices, such as speech recognition.",
+    "She will also start evaluating the team's work if possible.",
+    "The industial and interface designer will work together on the two prototypes (one cost-effective and one higher-end).",
+    "They will recieve further instructions by email."
+   ],
+   "tickets": [
+    {
+     "summary": "Prepare a remote-control design with an exact cost estimate.",
+     "owner": "Industrial Designer",
+     "quote": "when you make a a design ca you can next meeting you can give an quite an exact cost price",
+     "matched": null
+    },
+    {
+     "summary": "Prepare and present a remote-control design.",
+     "owner": "Industrial Designer",
+     "quote": "Ma I I think uh for next meeting we c you two can present a real",
+     "matched": null
+    },
+    {
+     "summary": "Produce two designs: one less advanced and one more advanced, with the cost price.",
+     "owner": "User Interface Designer",
+     "quote": "one less advanced and one more advanced and with the cost price .",
+     "matched": "The industial and interface designer will work together on the two prototypes (one cost-effective and one higher-end)."
+    },
+    {
+     "summary": "Look into the costs of other devices that use speech recognition.",
+     "owner": "Marketing Expert",
+     "quote": "Maybe it would be interesting if you could look um for the cost inventories of other devices , if you're using speech recognition or something like that .",
+     "matched": "The marketing expert will look for the cost inventories of other devices, such as speech recognition."
+    }
+   ],
+   "found": [
+    0,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1001c",
+   "gold": [
+    "The Industrial Designer and the User Interface Designer will construct a prototype for the product.",
+    "The group will evaluate the prototype according to whether or not it meets the requirements of users."
+   ],
+   "tickets": [
+    {
+     "summary": "Finalize the look-and-feel design according to the decisions",
+     "owner": "Industrial Designer",
+     "quote": "So have the final uh look and feel design according to the decision .",
+     "matched": null
+    },
+    {
+     "summary": "Prepare the user-interface design",
+     "owner": "User Interface Designer",
+     "quote": "And have the the user interface design",
+     "matched": null
+    },
+    {
+     "summary": "Evaluate the product against the users\u2019 requirements",
+     "owner": null,
+     "quote": "and uh then evaluate the prodyuc the product . That is to say , uh check if it fit the the requirement uh given by the users",
+     "matched": "The group will evaluate the prototype according to whether or not it meets the requirements of users."
+    },
+    {
+     "summary": "Work together to prepare the prototype",
+     "owner": "Industrial Designer",
+     "quote": "So so to prepare the prototype I would suggest that the Industrial Designer and the User Interface Designer uh work together .",
+     "matched": "The Industrial Designer and the User Interface Designer will construct a prototype for the product."
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "IS1003b",
+   "gold": [
+    "The Industrial Designer will conduct further research into components.",
+    "The User Interface Designer will work on the interface concept"
+   ],
+   "tickets": [
+    {
+     "summary": "Work on the remote control components.",
+     "owner": "Industrial Designer",
+     "quote": "to put um pon yeah",
+     "matched": null
+    },
+    {
+     "summary": "Work on the user interface concept.",
+     "owner": "User Interface Designer",
+     "quote": "and the User Interface Designer to work on the user interface concept .",
+     "matched": "The User Interface Designer will work on the interface concept"
+    }
+   ],
+   "found": [
+    1
+   ]
+  },
+  {
+   "meeting": "IS1003c",
+   "gold": [
+    "The Industrial Designer will work on the look and feel of the design, the ease of use of the design, the characteristics of being powerful and fancy, and the speech recognition aspect.",
+    "The User Interface Designer will work on adding a spongy quality to the buttons and the shape of the remote.",
+    "Two members of the team will work on creating a prototype made of clay"
+   ],
+   "tickets": [
+    {
+     "summary": "Present the slides",
+     "owner": "Industrial Designer",
+     "quote": ", then present it later .",
+     "matched": null
+    },
+    {
+     "summary": "Develop a spongy touch for the buttons.",
+     "owner": "Baba",
+     "quote": "Uh you will have to work more , Baba , on the um spongy way to to add spongy um touch",
+     "matched": "The User Interface Designer will work on adding a spongy quality to the buttons and the shape of the remote."
+    },
+    {
+     "summary": "Find a suitable shape for the wooden remote control.",
+     "owner": "Baba",
+     "quote": "and try to find maybe a nice shape for the wooden remote control .",
+     "matched": "The User Interface Designer will work on adding a spongy quality to the buttons and the shape of the remote."
+    },
+    {
+     "summary": "Work together on the prototype.",
+     "owner": "Baba",
+     "quote": "So you will have Baba and David Jordan you will have to work together on the prototype",
+     "matched": "Two members of the team will work on creating a prototype made of clay"
+    },
+    {
+     "summary": "Model a clay remote control and show it at the next meeting.",
+     "owner": "Baba",
+     "quote": "and you will have next time to show us um modelling a cl a clay remote control , so you will have to model model something",
+     "matched": "Two members of the team will work on creating a prototype made of clay"
+    }
+   ],
+   "found": [
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1004a",
+   "gold": [
+    "The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs.",
+    "They will receive more information by email."
+   ],
+   "tickets": [
+    {
+     "summary": "Research what customers are willing to pay for the remote control and report the findings.",
+     "owner": "Guillermo",
+     "quote": "Okay I think this is more a job to our market",
+     "matched": null
+    },
+    {
+     "summary": "Work on the working design.",
+     "owner": null,
+     "quote": "you have to work on the on the working design",
+     "matched": "The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs."
+    },
+    {
+     "summary": "Work on the technical functions.",
+     "owner": null,
+     "quote": "you have to uh work on the technical functions",
+     "matched": "The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs."
+    },
+    {
+     "summary": "Work on the user requirements specifications.",
+     "owner": null,
+     "quote": "and uh you have to work on us user requirements specs",
+     "matched": "The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "IS1004b",
+   "gold": [
+    "The industrial designer will work on the component concept.",
+    "The interface specialist will work on the user interface.",
+    "The marketing expert will work on trend-watching."
+   ],
+   "tickets": [
+    {
+     "summary": "Review the LCD option and report back.",
+     "owner": null,
+     "quote": "The L_C_D_ is still on disc is still open to discussion . It is up to you to go through this um uh this way and to to report report me back next meeting .",
+     "matched": null
+    },
+    {
+     "summary": "Determine whether the remote control\u2019s unit price can be increased.",
+     "owner": null,
+     "quote": "Okay this is this is an open question for you . Yeah . This is uh up to you to tell us . But I'm definitely not keen on",
+     "matched": null
+    },
+    {
+     "summary": "Work on the component concept.",
+     "owner": "Industrial Designer",
+     "quote": "is is very bad . So , this is the end of this discussion . Next meeting uh here are the task you have to work on . Um so you have to work on the component uh concept",
+     "matched": "The industrial designer will work on the component concept."
+    },
+    {
+     "summary": "Work on the user interface.",
+     "owner": "User Interface Designer",
+     "quote": ". Uh you have to work on user interface , and you have to go through a trend watching . Okay . So the question is still open about the L_C_D_ thing . Um uh we I hope that next meeting we will uh we'll take some um decision that direction . Thanks",
+     "matched": "The interface specialist will work on the user interface."
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "IS1004c",
+   "gold": [
+    "Before the next meeting, the interface specialist and industrial designer have to work together on the user interface and the look/feel design.",
+    "The marketing expert has to look up product evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Work with the other designer on the look-and-feel design, user interface, and first prototype.",
+     "owner": "User Interface Designer",
+     "quote": "You have to uh work on the look and feel uh design and you have to work on the user interface , in fact you two you have to work together to model the first uh f first prototype.",
+     "matched": "Before the next meeting, the interface specialist and industrial designer have to work together on the user interface and the look/feel design."
+    },
+    {
+     "summary": "Conduct the product evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "Uh Marketing Expert uh have to go to product evaluation.",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "IS1005a",
+   "gold": [
+    "The interface designer will work on the technical functions of the remote.",
+    "The marketing expert will find the user requirements for the remote"
+   ],
+   "tickets": [
+    {
+     "summary": "Develop design ideas for the remote control.",
+     "owner": "Hamed",
+     "quote": "Uh the the interface interface developer will work on the on the design of the remote control , start to to have new idea and",
+     "matched": null
+    },
+    {
+     "summary": "Work on the remote control\u2019s technical functions.",
+     "owner": "Hamed",
+     "quote": "um , uh , you are going to work on the technical functions of the remote control .",
+     "matched": "The interface designer will work on the technical functions of the remote."
+    },
+    {
+     "summary": "Identify user requirements for the remote control.",
+     "owner": "Bob",
+     "quote": "you are going to try to to find the user requirements f uh for the remote control .",
+     "matched": "The marketing expert will find the user requirements for the remote"
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "IS1005b",
+   "gold": [
+    "The team members will work on their individual work"
+   ],
+   "tickets": [
+    {
+     "summary": "Research available communication and infrared circuits on the market.",
+     "owner": "Industrial Designer",
+     "quote": "so I have to look what what is a v a v available on the market for for the communication for the I_R_ circuits and so on, so I'm currently looking what is available on the web .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "IS1005c",
+   "gold": [
+    "The industrial designer will work on the look and feel of the design.",
+    "The user interface designer will work on the user interface design.",
+    "The marketing expert will work on the project evaluation.",
+    "The industrial designer and user interface designer will work together on a prototype"
+   ],
+   "tickets": [
+    {
+     "summary": "Send the preferred five-by-ten dimensions to the Industrial Designer.",
+     "owner": "User Interface Designer",
+     "quote": "five by ten numbers that you find the best and send it me and I will work it out .",
+     "matched": null
+    },
+    {
+     "summary": "Make the five-by-ten design.",
+     "owner": "Industrial Designer",
+     "quote": "I'll make it .",
+     "matched": null
+    },
+    {
+     "summary": "Work on the look and feel design.",
+     "owner": "Industrial Manager",
+     "quote": "So , um uh the next meeting will start in thirty minutes . Um , so uh the the Industrial Manager uh will uh will work on the look and feel design . The User Interface uh uh Mana uh Manager will work on the user interface device . And the the Marketing Expert will do the first project evaluation .",
+     "matched": "The industrial designer will work on the look and feel of the design."
+    },
+    {
+     "summary": "Work on the user interface device.",
+     "owner": null,
+     "quote": "So , um uh the next meeting will start in thirty minutes . Um , so uh the the Industrial Manager uh will uh will work on the look and feel design . The User Interface uh uh Mana uh Manager will work on the user interface device . And the the Marketing Expert will do the first project evaluation .",
+     "matched": "The user interface designer will work on the user interface design."
+    },
+    {
+     "summary": "Do the first project evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "So , um uh the next meeting will start in thirty minutes . Um , so uh the the Industrial Manager uh will uh will work on the look and feel design . The User Interface uh uh Mana uh Manager will work on the user interface device . And the the Marketing Expert will do the first project evaluation .",
+     "matched": "The marketing expert will work on the project evaluation."
+    },
+    {
+     "summary": "Work together on a first prototype, focusing on the shape and how to put everything together.",
+     "owner": "Hamed",
+     "quote": "So , I hope you can do that in thirty minutes . And uh , yeah , I uh I think you should work together , s you uh Hamed and Peter , to work uh in a in a first prototype , and uh more about the shape and so on and how you can manage to put everything together . And um as usual you will receive some specific instructions on . So",
+     "matched": "The industrial designer and user interface designer will work together on a prototype"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "meeting": "IS1006b",
+   "gold": [
+    "The industrial designer will focus on the components concept.",
+    "The user interface designer will focus on the user interface concept.",
+    "The marketing expert will work on trend watching"
+   ],
+   "tickets": [
+    {
+     "summary": "Check whether the marketing department has a specialist who can research channel-number use.",
+     "owner": "Marketing Expert",
+     "quote": "I'll check in my department if there's someone specialist in that .",
+     "matched": null
+    },
+    {
+     "summary": "Add the connections between the remote-control components to the design.",
+     "owner": "Industrial Designer",
+     "quote": "Uh since I don't have much time so I'll input the connections to all this components .",
+     "matched": null
+    },
+    {
+     "summary": "Check the specifications of different TV brands and determine the encryption codes needed to communicate with them.",
+     "owner": null,
+     "quote": "check their specifications and do their uh encryption that's passing information to the T_V_ device .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the component concept",
+     "owner": "Industrial Designer",
+     "quote": "you will focus on the component concept",
+     "matched": "The industrial designer will focus on the components concept."
+    },
+    {
+     "summary": "Develop the user interface concept",
+     "owner": "Mark",
+     "quote": "Mark will be uh focused on the user interface concept",
+     "matched": "The user interface designer will focus on the user interface concept."
+    },
+    {
+     "summary": "Watch trends",
+     "owner": "Sammy Benjo",
+     "quote": "our m Market Expert Sammy Benjo uh on the trend watching",
+     "matched": "The marketing expert will work on trend watching"
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1007a",
+   "gold": [
+    "All participants were instructed to gather information for the functional design meeting."
+   ],
+   "tickets": [
+    {
+     "summary": "Research the technical points for the remote-control design and prepare to discuss them.",
+     "owner": "Industrial Designer",
+     "quote": "Well I I think that Norman and I would think about um the technical points and um we should discuss it in the next meeting , or",
+     "matched": "All participants were instructed to gather information for the functional design meeting."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "IS1007c",
+   "gold": [
+    "The group will find out if the kinetic energy component can provide enough energy.",
+    "The group will inquire about the cost of voice recognition and the scroll button.",
+    "The group will ask about the capability of the voice recognition component."
+   ],
+   "tickets": [
+    {
+     "summary": "Find out the cost of an LCD display and report back.",
+     "owner": "Industrial Designer",
+     "quote": "Uh maybe you can find out the price and tell us next time",
+     "matched": null
+    },
+    {
+     "summary": "Define the vocabulary set for the speech recognizer.",
+     "owner": null,
+     "quote": "I think we need to define also a s the set of vocabularies for the speech recogniser",
+     "matched": null
+    },
+    {
+     "summary": "Check the price differences for what to use and where to use it.",
+     "owner": "Industrial Designer",
+     "quote": "So for my part I will check the prices the um the prices difference uh of what to use , where to use , and s",
+     "matched": "The group will inquire about the cost of voice recognition and the scroll button."
+    },
+    {
+     "summary": "Check with the R&D department on the recogniser\u2019s capability.",
+     "owner": null,
+     "quote": "Check with the v R_ and D_ department the capability of recogniser",
+     "matched": "The group will ask about the capability of the voice recognition component."
+    }
+   ],
+   "found": [
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "IS1007d",
+   "gold": [
+    "The User Interface Designer and the Industrial Designer will look into options for spongy skin materials."
+   ],
+   "tickets": [
+    {
+     "summary": "Investigate charger options and types.",
+     "owner": null,
+     "quote": "uh again depends on the types . I think we have to investigate more on that , but",
+     "matched": null
+    },
+    {
+     "summary": "Research the material options.",
+     "owner": null,
+     "quote": "I think you need to look into the material .",
+     "matched": "The User Interface Designer and the Industrial Designer will look into options for spongy skin materials."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "IS1008a",
+   "gold": [
+    "The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.",
+    "The Industrial Designer will prepare an initial functional design.",
+    "The User Interface Designer will contribute studies on user requirements to the functional design.",
+    "The Project Manager will post his presentation to be available for all participants."
+   ],
+   "tickets": [
+    {
+     "summary": "Prepare a project plan.",
+     "owner": "Ed",
+     "quote": "Certainly by the next meeting.",
+     "matched": null
+    },
+    {
+     "summary": "Determine the functional design and discuss it with Ed, including user acceptance.",
+     "owner": "Agnes",
+     "quote": "Okay . To come up with the functional design and uh to discuss with Ed , okay , and how it's going to be work , and uh first of all with your user acceptance",
+     "matched": "The Industrial Designer will prepare an initial functional design."
+    },
+    {
+     "summary": "Get back to the project manager about who will contribute to the plan.",
+     "owner": "Christine",
+     "quote": "Okay, I'll get back to you on that.",
+     "matched": null
+    }
+   ],
+   "found": [
+    1
+   ]
+  },
+  {
+   "meeting": "IS1008b",
+   "gold": [
+    "The Industrial Designer will make a presentation on the components concept for the product.",
+    "The User Interface Designer will make a presentation on the user interface concept.",
+    "The Marketing Expert will present the marketing concept.",
+    "The Project Manager will research companies that can provide the Industrial Designer with help on integrating voice recognition into her design."
+   ],
+   "tickets": [
+    {
+     "summary": "Add an unbreakable feature to the outline design.",
+     "owner": "Christine",
+     "quote": "Yes . Okay , so if you can add the feature , okay , for your uh fabric whatever in your outline design okay , with unbreakable , okay , I think that will give a lot of advantage for our product , if I'm not wrong .",
+     "matched": null
+    },
+    {
+     "summary": "Email the project aim.",
+     "owner": "Project Manager",
+     "quote": "Okay , uh I will I will send you a mail , okay ? The project may be the the project aim , okay .",
+     "matched": null
+    },
+    {
+     "summary": "Discuss the sales price, production cost, and market price with the designer.",
+     "owner": "Eddie",
+     "quote": "That maybe Eddie will talk to you about uh how much uh the price and uh what's uh how much its cost for the manufacturing and how much it's going to be we sell in the market .",
+     "matched": null
+    },
+    {
+     "summary": "Provide feedback on the pricing and cost information.",
+     "owner": "Christine",
+     "quote": "Then uh you can come back with your feedback .",
+     "matched": null
+    },
+    {
+     "summary": "Find out the development timeframe for speech recognition.",
+     "owner": null,
+     "quote": "Okay , we'll find that out .",
+     "matched": null
+    },
+    {
+     "summary": "Prepare a sales projection.",
+     "owner": "Marketing Expert",
+     "quote": "I will come back and sit on your head because uh you are going to give your sales projection , okay .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the components concept.",
+     "owner": "Industrial Designer",
+     "quote": "Well it says individual actions , it says user interf so I'm supposed to do the components concept",
+     "matched": null
+    },
+    {
+     "summary": "Develop the user interface concept.",
+     "owner": "User Interface Designer",
+     "quote": ", supposed to work on the user interface concept , and you're supposed to keep watching the trends .",
+     "matched": null
+    },
+    {
+     "summary": "Send the meeting minutes.",
+     "owner": "Project Manager",
+     "quote": "So thanks for coming and uh I'll send you minutes of meeting ,",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "IS1008c",
+   "gold": [
+    "The Industrial Designer and the User Interface Designer will design the prototype of the remote control.",
+    "The Marketing Expert will find out how much the display component costs and will present his marketing strategy at the next meeting."
+   ],
+   "tickets": [
+    {
+     "summary": "Find out more about the advanced chip on print.",
+     "owner": "Industrial Designer",
+     "quote": "I don't know , but I'll find out more at our next meeting .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the remote-control prototype model.",
+     "owner": "User Interface Designer",
+     "quote": "Okay , so maybe what you can do is uh , both of you , you can come up with the the prototype , okay , the model",
+     "matched": "The Industrial Designer and the User Interface Designer will design the prototype of the remote control."
+    },
+    {
+     "summary": "Find out the extra cost of adding a display.",
+     "owner": "Ed",
+     "quote": "So , we will stick with the the simple design for time being until uh th Ed find outs about the how much it's cost to the extra , in case we go for the display",
+     "matched": "The Marketing Expert will find out how much the display component costs and will present his marketing strategy at the next meeting."
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "IS1008d",
+   "gold": [
+    "The Project Manager will negotiate with production companies and with management to decrease the cost of production.",
+    "He will also present the new promotion plan to management.",
+    "The Marketing Expert will begin his marketing plan after production has begun.",
+    "The group will evaluate the product after real units have been produced."
+   ],
+   "tickets": [
+    {
+     "summary": "Negotiate with vendors and management to reduce production costs.",
+     "owner": "Project Manager",
+     "quote": "But anyhow , still we are under control , okay , so what uh I will do is I will try to negotiate with the vendors , okay , to get uh the production cost less , okay , so then we can save some money , okay , to put into th our marketing or uh you know the promotions , whatever , okay , so that uh I will look after . I will speak to the management and how to get uh you know some more uh cost down .",
+     "matched": "The Project Manager will negotiate with production companies and with management to decrease the cost of production."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "IS1009a",
+   "gold": [
+    "The industrial designer will work on the working design and technical function.",
+    "The interface specialist will do the working design and functional design.",
+    "The marketing manager will look for user requirement specifications such as friendliness"
+   ],
+   "tickets": [
+    {
+     "summary": "Prepare a working technical-functional design.",
+     "owner": "Jeanne-Oui",
+     "quote": "So , we looking for a working design when we come back .",
+     "matched": "The industrial designer will work on the working design and technical function."
+    },
+    {
+     "summary": "Prepare the user requirement specification, including friendliness and price considerations.",
+     "owner": "Eileen",
+     "quote": "And the marketing manager is coming up with some user requirement specification , like friendliness , and what we just discussed in general . That would be your idea . And , of course , price .",
+     "matched": "The marketing manager will look for user requirement specifications such as friendliness"
+    }
+   ],
+   "found": [
+    0,
+    2
+   ]
+  },
+  {
+   "meeting": "TS3003a",
+   "gold": [
+    "The team members will work on their individual projects"
+   ],
+   "tickets": [
+    {
+     "summary": "Work on the working design, components design, and look-and-feel design.",
+     "owner": "Industrial Designer",
+     "quote": "The Industrial Designer is going to work on the working design , uh components design and a bit of the look and feel design .",
+     "matched": null
+    },
+    {
+     "summary": "Do the technical function design, user interface concept, and user interface design.",
+     "owner": "User Interface Designer",
+     "quote": "The User Interface Designer is going to do the technical function design , user interface concept and user interface design .",
+     "matched": null
+    },
+    {
+     "summary": "Work on the user requirement specification, trend watching, and product evaluation.",
+     "owner": "Marketing Expert",
+     "quote": "And the marketing expert is doing a little bit of user requirement specification , trend watching and project uh product ev evaluation .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3003b",
+   "gold": [
+    "The industrial designer will work on the components concept.",
+    "The user interface designer will work on the user interface concept and trend-watching"
+   ],
+   "tickets": [
+    {
+     "summary": "Develop the components concept.",
+     "owner": "Industrial Designer",
+     "quote": "for the next meeting is the Industrial Designer will do the components concept",
+     "matched": "The industrial designer will work on the components concept."
+    },
+    {
+     "summary": "Develop the user interface concept.",
+     "owner": "User Interface Designer",
+     "quote": "User Interface Designer the user interface concept",
+     "matched": "The user interface designer will work on the user interface concept and trend-watching"
+    },
+    {
+     "summary": "Conduct trend-watching.",
+     "owner": null,
+     "quote": "and the trend-watching",
+     "matched": "The user interface designer will work on the user interface concept and trend-watching"
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "TS3003c",
+   "gold": [
+    "The team members will look at the corporate website.",
+    "The user interface designer will continue with what he has been working on.",
+    "The industrial designer and user interface designer will work together"
+   ],
+   "tickets": [
+    {
+     "summary": "Ask the manufacturing department about speech-recognition pricing.",
+     "owner": "Industrial Designer",
+     "quote": "Mm I don't have any information on pricing . So I'll have to ask the manufacturing department .",
+     "matched": null
+    },
+    {
+     "summary": "Review the corporate website for the corporate design image to use in the remote.",
+     "owner": null,
+     "quote": "It's important that the corporate design image uh is going to be in the remote . So check out the corporate website maybe .",
+     "matched": "The team members will look at the corporate website."
+    },
+    {
+     "summary": "Work on the product evaluation.",
+     "owner": "Industrial Designer",
+     "quote": "The user interface design , it's the same story . And product evaluation . So the Industrial Designer and User Interface Designer are going to work together on this one .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3003d",
+   "gold": [
+    "The project manager will prepare the final presentation, while the rest of the group will fill in a questionnaire."
+   ],
+   "tickets": [
+    {
+     "summary": "Test the design.",
+     "owner": null,
+     "quote": "We have to test it",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3004b",
+   "gold": [
+    "The Marketing Expert will prepare a report on trendwatching."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "TS3004c",
+   "gold": [
+    "The User Interface Designer and the Industrial Designer will draw the prototype design on the smartboard at the next meeting.",
+    "The User Interface Designer was instructed to finalize the placement of the buttons."
+   ],
+   "tickets": [
+    {
+     "summary": "Check what the technology department means by its speech-recognition recommendation.",
+     "owner": "User Interface Designer",
+     "quote": "I'll check what they exact mean .",
+     "matched": null
+    },
+    {
+     "summary": "Check the chip selection.",
+     "owner": "Industrial Designer",
+     "quote": "I think I'll just check it .",
+     "matched": null
+    },
+    {
+     "summary": "Work with the User Interface Designer on the prototype drawing on the smart board.",
+     "owner": "Industrial Designer",
+     "quote": "I_D_ and U_I_D_ work together on prototype drawing on smart board .",
+     "matched": "The User Interface Designer and the Industrial Designer will draw the prototype design on the smartboard at the next meeting."
+    },
+    {
+     "summary": "Look for examples of rounded devices and designs.",
+     "owner": "User Interface Designer",
+     "quote": "Just a bit cur Okay , I'll see if I can see any of those .",
+     "matched": null
+    },
+    {
+     "summary": "Review the channel-button placement.",
+     "owner": "User Interface Designer",
+     "quote": "Yeah , okay I'll d I'll take a look at it .",
+     "matched": "The User Interface Designer was instructed to finalize the placement of the buttons."
+    },
+    {
+     "summary": "Ask her whether the drawing tool can work better.",
+     "owner": "User Interface Designer",
+     "quote": "So maybe you have to ask her .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "TS3004d",
+   "gold": [
+    "The group have to fill out a final questionnaire."
+   ],
+   "tickets": [
+    {
+     "summary": "Draw the recharger.",
+     "owner": "User Interface Designer",
+     "quote": "But you still have to draw the resi the recharger",
+     "matched": null
+    },
+    {
+     "summary": "Take some pictures.",
+     "owner": "Marketing Expert",
+     "quote": "I should take some pictures uh .",
+     "matched": null
+    },
+    {
+     "summary": "Write a final report.",
+     "owner": "Project Manager",
+     "quote": "Yes , I think just I just write a final report .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3005a",
+   "gold": [
+    "The marketing expert will look at user requirement specifications.",
+    "The industrial designer will look at the working design.",
+    "The user interface designer will look at the technical functions design"
+   ],
+   "tickets": [
+    {
+     "summary": "Review the user requirement specification.",
+     "owner": "Marketing Expert",
+     "quote": "Um the Marketing Expert will uh will take a look at the user requirement specification.",
+     "matched": "The marketing expert will look at user requirement specifications."
+    },
+    {
+     "summary": "Work out the technical functions design.",
+     "owner": "User Interface Designer",
+     "quote": "The User Interface Designer will work out the technical functions design.",
+     "matched": null
+    },
+    {
+     "summary": "Review the working design and usability interaction.",
+     "owner": "Industrial Designer",
+     "quote": "No , the Industrial Designer will take a look at the working design , and the in uh usability interaction",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3005c",
+   "gold": [
+    "The industrial designer and user interface designer will work together on a prototype drawing on a smart board"
+   ],
+   "tickets": [
+    {
+     "summary": "Work with the User Interface Designer on a prototype drawing on a smart board.",
+     "owner": "Industrial Designer",
+     "quote": "on a prototype drawing on a smart board , and of course",
+     "matched": "The industrial designer and user interface designer will work together on a prototype drawing on a smart board"
+    },
+    {
+     "summary": "Email specific instructions to all four participants.",
+     "owner": "personal coach",
+     "quote": "will be emailed by our personal coach .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3006a",
+   "gold": [
+    "The interface designer should specify technical functions.",
+    "The marketing expert will come up with user requirements by doing internet research.",
+    "The industrial designer should produce a working design.",
+    "They will receive more information by email"
+   ],
+   "tickets": [
+    {
+     "summary": "Produce the working design.",
+     "owner": "Industrial Designer",
+     "quote": "Okay so the um uh this industrati Industrial Designer should produce a working design . Am I correct ?",
+     "matched": "The industrial designer should produce a working design."
+    },
+    {
+     "summary": "Specify the technical functions.",
+     "owner": "User Interface Designer",
+     "quote": "Okay . Uh the User Interface Designer should specify the technical functions . Right ? Yeah",
+     "matched": "The interface designer should specify technical functions."
+    },
+    {
+     "summary": "Develop the user requirements.",
+     "owner": "Marketing Expert",
+     "quote": "And the Marketing uh Expert should come up with user requirements",
+     "matched": "The marketing expert will come up with user requirements by doing internet research."
+    },
+    {
+     "summary": "Work on the conceptual design.",
+     "owner": "Industrial Designer",
+     "quote": "I am gonna work on the conceptual design already 'cause",
+     "matched": null
+    },
+    {
+     "summary": "Prepare to defend the design.",
+     "owner": "Project Manager",
+     "quote": "And at the end of the day we have a final meeting . And then I have to prepare uh I have to defend our design , so make it good",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "TS3006c",
+   "gold": [
+    "The industrial designer and user interface designer will work together on the prototype design.",
+    "The marketing expert will prepare the prototype evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Evaluate the product when it is available.",
+     "owner": "Marketing Expert",
+     "quote": "You will do the evaluation .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3007a",
+   "gold": [
+    "The Industrial Designer will work on the working design.",
+    "The User Interface Designer will research the technical functions."
+   ],
+   "tickets": [
+    {
+     "summary": "Review the working design.",
+     "owner": "Industrial Designer",
+     "quote": "The Industrial uh Designer has to uh look at the working design .",
+     "matched": null
+    },
+    {
+     "summary": "Review the technical functions.",
+     "owner": "User Interface Designer",
+     "quote": "the User Interface Designer has to look at the technical functions .",
+     "matched": null
+    },
+    {
+     "summary": "Identify the most important priorities from your perspective.",
+     "owner": "Industrial Designer",
+     "quote": "So uh each individually i individually uh must think on what's uh at uh his point of view is the most important",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3007b",
+   "gold": [
+    "They will receive specific instructions for the next meeting by email.",
+    "They will fill out the questionaire"
+   ],
+   "tickets": [
+    {
+     "summary": "Fill out the questionnaire.",
+     "owner": null,
+     "quote": "Uh well uh it's it's simply filling oh no , it's uh it's also filling out no , I'd do it after lunch I think",
+     "matched": "They will fill out the questionaire"
+    }
+   ],
+   "found": [
+    1
+   ]
+  },
+  {
+   "meeting": "TS3007c",
+   "gold": [
+    "The industrial designer and user interface designer will work together on a prototype, using the SMARTboard. The marketing expert will work on the product evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Consult your legal advisor about the parental-control feature.",
+     "owner": "Marketing Expert",
+     "quote": "I have to uh consult my legal advisor about it .",
+     "matched": null
+    },
+    {
+     "summary": "Work with the User Interface Designer on a prototype and draw it on the SMARTboard.",
+     "owner": "Industrial Designer",
+     "quote": "the industrial uh development uh centre and uh user interface uh will work together on a prototype . And uh will drawing it on the SMARTboard .",
+     "matched": "The industrial designer and user interface designer will work together on a prototype, using the SMARTboard. The marketing expert will work on the product evaluation."
+    },
+    {
+     "summary": "Evaluate the product.",
+     "owner": "Marketing Expert",
+     "quote": "the marketing expert will uh will uh ke he will be keeping busy with the product uh evaluation .",
+     "matched": "The industrial designer and user interface designer will work together on a prototype, using the SMARTboard. The marketing expert will work on the product evaluation."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3007d",
+   "gold": [
+    "The project manager will finish the final report."
+   ],
+   "tickets": [
+    {
+     "summary": "Put the end report on a storyboard.",
+     "owner": "Project Manager",
+     "quote": "yeah ? So I I s I will uh put it on a story-board .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3008a",
+   "gold": [
+    "The industrial designer will work on the working design.",
+    "The user interface designer will work on the technical functions design.",
+    "The marketing expert will work on user requirements.",
+    "The project manager will write up the meeting minutes and put them in the project folder."
+   ],
+   "tickets": [
+    {
+     "summary": "Handle the remote control\u2019s usability.",
+     "owner": "User Interface Designer",
+     "quote": "Well , then you're you're the usability uh man , so this uh gonna be a very important task for you then .",
+     "matched": null
+    },
+    {
+     "summary": "Develop the working design.",
+     "owner": "Industrial Designer",
+     "quote": "The Industrial Designer will w or the working design, of course, we will uh Already s said that .",
+     "matched": "The industrial designer will work on the working design."
+    },
+    {
+     "summary": "Design the technical functions.",
+     "owner": "User Interface Designer",
+     "quote": "The User Interface Designer is it a User Inter User Interface the technical functions design",
+     "matched": "The user interface designer will work on the technical functions design."
+    },
+    {
+     "summary": "Prepare the user requirements specification.",
+     "owner": "Marketing Expert",
+     "quote": "And the Management Expert of uh the Marketing Expert . User requirements specifi",
+     "matched": "The marketing expert will work on user requirements."
+    },
+    {
+     "summary": "Identify what makes the remote control trendy.",
+     "owner": "Marketing Expert",
+     "quote": "Well , and you uh should look out for what makes it trendy . Well , you know , y like some special feature . Or some Does it does it gets some gadgetness or something .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "TS3008b",
+   "gold": [
+    "The project manager will write up the minutes, and put the minutes from both this meeting and the previous one in the project folder.",
+    "The marketing expert, industrial designer and user interface designer will have thirty minutes after lunch to work on their individual presentations."
+   ],
+   "tickets": [
+    {
+     "summary": "Look up the company slogan.",
+     "owner": "Marketing Expert",
+     "quote": "Yeah , I'll have a look .",
+     "matched": null
+    },
+    {
+     "summary": "Brainstorm a distinctive basic function for the remote control.",
+     "owner": null,
+     "quote": "So maybe uh that's i I think that's when uh when we decide on these type of functions , know , basic functions , uh it's very important to find something like this . So there's a very important task for you . And maybe we can all think about it . Uh , also for you maybe , when t you it's very nice when you can be entra when you can be trendy , and and uh and al as in a friend use friendly as well , you know",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3008c",
+   "gold": [
+    "The project manager will write up the minutes and put them in the shared folder, using a keyboard instead of the digital pen.",
+    "The rest of the group will receive instructions via email."
+   ],
+   "tickets": [
+    {
+     "summary": "Bring the logo and related design elements into the concept.",
+     "owner": null,
+     "quote": "we have to we have to bring the logo and all the stuff uh back into it .",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3008d",
+   "gold": [
+    "The group will fill out a final questionnaire."
+   ],
+   "tickets": [
+    {
+     "summary": "Discuss the additional number-selection buttons in the usability lab.",
+     "owner": null,
+     "quote": "We'll discuss them in the usability lab .",
+     "matched": null
+    },
+    {
+     "summary": "Discuss the docking station, including its cost considerations.",
+     "owner": null,
+     "quote": "Well let's ha let's talk about the docking station later , because uh maybe we have we have to uh consider the docking station anyway , because we have some uh cost issues",
+     "matched": null
+    },
+    {
+     "summary": "Agree on the exact colours.",
+     "owner": null,
+     "quote": "But uh , and we have to agree uh upon the exact colours , but may I dunno if that's important , but we'll talk about that later . Okay , for now this is this is okay",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3009a",
+   "gold": [
+    "Individual must come up with their ideas for the next meeting.",
+    "The interface specialist will look at button and over all look."
+   ],
+   "tickets": [
+    {
+     "summary": "Develop ideas about materials and markets for the next meeting.",
+     "owner": null,
+     "quote": "individually we'll have to uh come up with ideas for the next meeting about these materials and markets",
+     "matched": "Individual must come up with their ideas for the next meeting."
+    },
+    {
+     "summary": "Investigate the market for customizable remote-control fronts.",
+     "owner": "Marketing Expert",
+     "quote": "I will investigate .",
+     "matched": null
+    },
+    {
+     "summary": "Determine the precision needed for the buttons and which buttons the remote should have.",
+     "owner": "User Interface Designer",
+     "quote": "probably about uh the precision of the buttons and and those kind of things and what buttons will have to be on the uh remote .",
+     "matched": "The interface specialist will look at button and over all look."
+    },
+    {
+     "summary": "Look into the remote\u2019s technical design and form.",
+     "owner": "Industrial Designer",
+     "quote": "And you will look into the technical design and um form , I think .",
+     "matched": "The interface specialist will look at button and over all look."
+    }
+   ],
+   "found": [
+    0,
+    1
+   ]
+  },
+  {
+   "meeting": "TS3009b",
+   "gold": [
+    "Each member of the team will come for the next meeting with their views on function and design issues that they had not time to consolidate during this meeting."
+   ],
+   "tickets": [
+    {
+     "summary": "Reach consensus on the LCD screen design.",
+     "owner": "Industrial Designer",
+     "quote": "And moreover I think that you two should be uh come to consensus about the L_C_D_ s . It's uh your it's your job",
+     "matched": null
+    }
+   ],
+   "found": []
+  },
+  {
+   "meeting": "TS3009c",
+   "gold": [
+    "The industrial designer and the user interface designer will work on a drawing of a prototype, where they will also sort out the details about the buttons.",
+    "The marketing expert will carry out an evaluation of the product."
+   ],
+   "tickets": [
+    {
+     "summary": "Compile the story and decisions into a Word document, placing the answers after the subjects.",
+     "owner": null,
+     "quote": "Copy paste uh this story into a into a Word document , and then uh put the answers after the subjects .",
+     "matched": null
+    },
+    {
+     "summary": "Design the remote\u2019s specific shape.",
+     "owner": "Industrial Designer",
+     "quote": "I will design it , we design it later .",
+     "matched": null
+    },
+    {
+     "summary": "Work with the User Interface Designer on a prototype drawing on the SMARTboard.",
+     "owner": "Industrial Designer",
+     "quote": "You're going to work together on a prototype drawing on the SMARTboard .",
+     "matched": "The industrial designer and the user interface designer will work on a drawing of a prototype, where they will also sort out the details about the buttons."
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3010b",
+   "gold": [
+    "The design of the remote control is to be carried out at the next meeting.",
+    "Individual actions for the next meeeting can be found in emails to be sent."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "TS3010c",
+   "gold": [
+    "The interface designer will find out how much an LCD screen will cost.",
+    "The industrial designer and user interface designer will stay in the room to design the prototypes."
+   ],
+   "tickets": [
+    {
+     "summary": "Find out how much the LCD option costs.",
+     "owner": "Industrial Designer",
+     "quote": "Maybe you can look how how much it is",
+     "matched": "The interface designer will find out how much an LCD screen will cost."
+    },
+    {
+     "summary": "Look into whether a small joystick is feasible and affordable.",
+     "owner": "Industrial Designer",
+     "quote": "So , please look at it .",
+     "matched": null
+    },
+    {
+     "summary": "Draw the remote-control concept.",
+     "owner": "Industrial Designer",
+     "quote": "You two stay here . Paint it .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0
+   ]
+  },
+  {
+   "meeting": "TS3011a",
+   "gold": [
+    "Each member of the group will work on their individual tasks.",
+    "They will receive information from their personal coaches."
+   ],
+   "tickets": [],
+   "found": []
+  },
+  {
+   "meeting": "TS3011b",
+   "gold": [
+    "The industrial designer will look into what would be an appropriate technology to help users find their remote, when it is lost.",
+    "The project manager will add the minutes into the project folder.",
+    "The ID will present the components concept.",
+    "The UI will present the user interface concept.",
+    "The marketing expert will need to find information on current trends."
+   ],
+   "tickets": [
+    {
+     "summary": "Investigate the remote-control finding function and propose a solution.",
+     "owner": "Sebastian",
+     "quote": "maybe Sebastian should have uh a detailed look later on and um come up with a solution",
+     "matched": "The industrial designer will look into what would be an appropriate technology to help users find their remote, when it is lost."
+    },
+    {
+     "summary": "Prepare the user interface concept.",
+     "owner": "Roo",
+     "quote": "User Interface Designer , uh Roo , I would like to see the user interface c uh concept",
+     "matched": "The UI will present the user interface concept."
+    },
+    {
+     "summary": "Find out the costs of determining the voice-recognition costs.",
+     "owner": "Project Manager",
+     "quote": "I'm not sure how how we'll f uh determine the costs , I will have a look at it .",
+     "matched": null
+    },
+    {
+     "summary": "Bring updated information about voice recognition.",
+     "owner": "Industrial Designer",
+     "quote": "Okay . Because I'll have some updated info on that uh",
+     "matched": null
+    },
+    {
+     "summary": "Do some trend watching.",
+     "owner": "Marketing Expert",
+     "quote": "I'm sure the marketing expert will receive uh t uh you will do some trend watching",
+     "matched": "The marketing expert will need to find information on current trends."
+    }
+   ],
+   "found": [
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "meeting": "TS3011c",
+   "gold": [
+    "The industrial designer and the user interface designer will work on a drawing of a prototype.",
+    "They will think about ways to make their product different from the others in the market.",
+    "They will also try to find a way to promote the corporate identity in the design of the look and feel and interface.",
+    "The ID and UI will also have to figure out whether to use rubber just for the buttons and side finish, or for the whole front of the remote.",
+    "The marketing expert will carry out a product evaluation."
+   ],
+   "tickets": [
+    {
+     "summary": "Check whether the scroll-wheels work with a single-curved case.",
+     "owner": "Industrial Designer",
+     "quote": "I'll check it for you .",
+     "matched": null
+    },
+    {
+     "summary": "Incorporate the corporate identity and grey/yellow colors into the product.",
+     "owner": "Roo",
+     "quote": "I guess that is something for Roo and Sebastian . Uh you talked about it before , the colours , grey and yellow .",
+     "matched": "They will also try to find a way to promote the corporate identity in the design of the look and feel and interface."
+    },
+    {
+     "summary": "Design the product's look and feel.",
+     "owner": "Sebastian",
+     "quote": "is um the design of the look and feel",
+     "matched": "They will also try to find a way to promote the corporate identity in the design of the look and feel and interface."
+    },
+    {
+     "summary": "Conduct the product evaluation.",
+     "owner": "User Interface Designer",
+     "quote": "And for you , the product evaluation .",
+     "matched": "The marketing expert will carry out a product evaluation."
+    },
+    {
+     "summary": "Work on the prototype drawing on the SMARTboard.",
+     "owner": "Industrial Designer",
+     "quote": "the I_D_ and the U_I_D_ need to work together on the prototype drawing on the SMARTboard .",
+     "matched": "The industrial designer and the user interface designer will work on a drawing of a prototype."
+    },
+    {
+     "summary": "Decide whether to use rubber or plastic for the case and buttons.",
+     "owner": "Industrial Designer",
+     "quote": "Um I guess you two have to figure that out . I'm going to leave the decision to you",
+     "matched": null
+    },
+    {
+     "summary": "Ask manufacturing whether the rubber and plastic finishes can be combined.",
+     "owner": "Industrial Designer",
+     "quote": "Well , I'm not sure , I have to ask with manufacturing , but I'm I'm not sure that's what you want , because our customers specifically ask for the spongy feel , and that's what you get with rubber .",
+     "matched": null
+    }
+   ],
+   "found": [
+    0,
+    2,
+    4
+   ]
+  },
+  {
+   "meeting": "TS3012b",
+   "gold": [
+    "The ID will present the components concept.",
+    "He will also check into the importance and possibility of using rechargeable batteries and a charger.",
+    "The UI will present the user interface concept.",
+    "He will also draw some ideas for the shape of the remote.",
+    "The marketing expert will need to find information on current trends and see into the financial issues concerning the integration of a charger.",
+    "The team will also examine whether they can use an LCD and/or speech recognition.",
+    "Finally, they will try to think of a name for their product."
+   ],
+   "tickets": [
+    {
+     "summary": "Develop a components concept.",
+     "owner": "Industrial Designer",
+     "quote": "So you have to come up with a components concept , yeah .",
+     "matched": "The ID will present the components concept."
+    },
+    {
+     "summary": "Research trends relevant to the remote-control design.",
+     "owner": "Marketing Expert",
+     "quote": "I want some you should do some trend-watching , because",
+     "matched": "The marketing expert will need to find information on current trends and see into the financial issues concerning the integration of a charger."
+    },
+    {
+     "summary": "Investigate durable materials so the symbols do not fade.",
+     "owner": "Industrial Designer",
+     "quote": "you should look into the in into the materials that are real durable .",
+     "matched": null
+    },
+    {
+     "summary": "Check whether a text-only TV guide preview is feasible.",
+     "owner": "Industrial Designer",
+     "quote": "I have to check that out , I'm not sure .",
+     "matched": null
+    },
+    {
+     "summary": "Research whether the universal remote can open TV menus and access advanced functions.",
+     "owner": "Industrial Designer",
+     "quote": "we need to put some research into that if if we can open the menu , I think it's possible",
+     "matched": null
+    },
+    {
+     "summary": "Determine whether changeable covers should include the buttons or only cover them.",
+     "owner": "Project Manager",
+     "quote": "something I have to look into . Either either change both the buttons and and the cover or just the cover , I'm not sure which which is easier , so",
+     "matched": null
+    },
+    {
+     "summary": "Sketch remote-control design ideas and present them at the next meeting.",
+     "owner": "User Interface Designer",
+     "quote": "I'll put some on paper and present them next time uh",
+     "matched": "He will also draw some ideas for the shape of the remote."
+    },
+    {
+     "summary": "Find out what customers are willing to pay for the remote control.",
+     "owner": "Marketing Expert",
+     "quote": "maybe you can find out i what people are willing to pay .",
+     "matched": null
+    },
+    {
+     "summary": "Research the cost and space requirements of LCD screens and speech recognition.",
+     "owner": "Industrial Designer",
+     "quote": "I'll try to .",
+     "matched": null
+    },
+    {
+     "summary": "Think of a name for the product.",
+     "owner": null,
+     "quote": "Shall we all try uh to think about a name ?",
+     "matched": "Finally, they will try to think of a name for their product."
+    }
+   ],
+   "found": [
+    0,
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "meeting": "TS3012c",
+   "gold": [
+    "The interface and the industrial designer will work together on the drawing of the prototype.",
+    "The ME is going to do the market analysis.",
+    "The PM needs to finish the project report."
+   ],
+   "tickets": [
+    {
+     "summary": "Look up the exact percentage of people interested in voice recognition.",
+     "owner": "Marketing Expert",
+     "quote": "Mean of uh seventy percent I think . Uh I'm I have to look it up .",
+     "matched": null
+    },
+    {
+     "summary": "Work with the Industrial Designer on the final internal and external design.",
+     "owner": "User Interface Designer",
+     "quote": "apparently you guys , you should work together on the final design , both on internal and external design .",
+     "matched": null
+    },
+    {
+     "summary": "Analyze how the product and its current design will fit into the market.",
+     "owner": "Marketing Expert",
+     "quote": "because you're gonna do the market market uh",
+     "matched": "The ME is going to do the market analysis."
+    },
+    {
+     "summary": "Prepare the year-end project report.",
+     "owner": "Project Manager",
+     "quote": "analysing I'm supposed to do the little work on the year-end report . So the project report .",
+     "matched": "The PM needs to finish the project report."
+    },
+    {
+     "summary": "Create a design sketch for the next meeting.",
+     "owner": "User Interface Designer",
+     "quote": "You doodle a doodle us a nice nice design for for the next meeting , we'll be done",
+     "matched": "The interface and the industrial designer will work together on the drawing of the prototype."
+    }
+   ],
+   "found": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "meeting": "TS3012d",
+   "gold": [
+    "The PM is going to finish the project report.",
+    "The UI and ID will send him their design to include."
+   ],
+   "tickets": [
+    {
+     "summary": "Assess how the black cover and button frame work together.",
+     "owner": "Industrial Designer",
+     "quote": "I think you that's what you were ass assigned to do really , to to see how b th both those work together",
+     "matched": null
+    },
+    {
+     "summary": "Finish the total report.",
+     "owner": "Project Manager",
+     "quote": "Okay , I should I think I sh I still have the the total report to finish up .",
+     "matched": "The PM is going to finish the project report."
+    }
+   ],
+   "found": [
+    0
+   ]
+  }
+ ]
+}
