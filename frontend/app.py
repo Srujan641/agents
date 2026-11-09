@@ -7,7 +7,6 @@ from meeting_agent.schemas import DraftStatus, Priority, TicketDraft, Transcript
 from meeting_agent.service import SetupError, build_app
 from pydantic import ValidationError
 
-
 logger = logging.getLogger(__name__)
 
 
