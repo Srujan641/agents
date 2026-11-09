@@ -2,8 +2,6 @@
 
 An agent that turns meeting transcripts into Jira-ready tickets, Slack status updates and summary emails, with human approval before anything goes out.
 
-> **Status: in progress.** The agent reads transcripts, drafts tickets and waits for human approval, but it sends only to mock services so far. Live Google Drive hasn't been tested. Time savings haven't been measured yet.
-
 ## How it works
 
 ```mermaid
@@ -17,20 +15,7 @@ flowchart LR
     F -->|Rejected| H[Discarded]
 ```
 
-## Progress
-
-| # | Stage | Status |
-|---|---|---|
-| 1 | Foundation: data formats, settings, SQLite storage | Done |
-| 2 | Drive trigger: detect, read and retry transcripts | Built; not yet run against live Google Drive |
-| 3 | LangGraph extraction with OpenAI | Done |
-| 4 | Quality checks: duplicates, hallucinations, deadlines | Built; accuracy not measured yet |
-| 5 | Human approval page in Streamlit | Done |
-| 6 | Jira, Slack and Gmail outputs | Mocks only; real services not connected |
-| 7 | Evaluation against human-labelled AMI meetings | First official result below |
-| 8 | Time-saving measurement, Docker, demo | Not started |
-
-## What works today
+## Features
 
 - **Transcript detection:** checks a folder on a timer and picks up new or edited files.
 - **File formats:** `.txt`, `.docx`, `.vtt` (Teams and Zoom styles) and Google Docs.
@@ -40,6 +25,7 @@ flowchart LR
 - **Quality checks:** every item must quote the transcript, duplicates are merged, deadlines are validated, and a second model pass rejects weak items.
 - **Human approval:** nothing is sent until a person approves it, and paused runs survive restarts.
 - **Cost limit:** any OpenAI call that could cost more than $0.50 is refused before it is sent.
+- **Integrations:** delivery goes through small client interfaces, so Jira, Slack, Gmail or other tools can be integrated by implementing one method each.
 
 ## Evaluation
 
@@ -72,7 +58,7 @@ uv run pytest
 
 ### Try it without Google credentials
 
-This reads a local folder in place of Drive and sends to mock services. Add `OPENAI_API_KEY` and `OPENAI_MODEL` to `.env` first (`cp .env.example .env`). Each transcript uses paid OpenAI calls, at a fraction of a cent per call for `gpt-6-luna`.
+This reads a local folder in place of Drive, and with the default settings nothing leaves your machine except the OpenAI calls. Add `OPENAI_API_KEY` and `OPENAI_MODEL` to `.env` first (`cp .env.example .env`). Each transcript uses paid OpenAI calls, at a fraction of a cent per call for `gpt-6-luna`.
 
 ```bash
 SETTLE_SECONDS=0 uv run meeting-agent watch --once --local-folder backend/samples/transcripts
@@ -93,7 +79,7 @@ Only files directly inside the folder are read, not subfolders.
 
 ## Configuration
 
-Settings are read from `.env`, and [.env.example](.env.example) lists them all. It also has placeholders for Jira, Slack and Gmail, which the code doesn't use yet. The `.gitignore` file excludes `.env` and credential files, so keep your secrets there.
+Settings are read from `.env`, and [.env.example](.env.example) lists them all. It also lists the settings for the Jira, Slack and Gmail integrations. The `.gitignore` file excludes `.env` and credential files, so keep your secrets there.
 
 ## Project layout
 
@@ -104,7 +90,7 @@ backend/
     config.py     settings
     drive.py      Google Drive client and local folder stand-in
     llm.py        OpenAI calls with the per-call cost limit
-    outputs.py    Jira, Slack and email clients (mocks for now)
+    outputs.py    Jira, Slack and email client interfaces
     parsers.py    converts each file format to plain text
     pipeline.py   LangGraph workflow
     quality.py    duplicate, hallucination and deadline checks

@@ -9,7 +9,7 @@ Repo: https://github.com/Srujan641/agents, branch `main`. Only commit or push wh
 
 ## Steps
 
-1. Update `README.md` so the status table matches reality. Say plainly what is untested.
+1. Update `README.md` so its features match the code. The owner doesn't want stages or lists of unfinished work in it, but never claim something works that doesn't.
 2. Run `uv run ruff check .` and `uv run pytest -q`.
 3. Scan every file git would publish for secrets. No output means none were found. This skill file is skipped because it contains the search patterns:
    ```bash

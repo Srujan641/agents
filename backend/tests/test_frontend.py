@@ -92,12 +92,13 @@ def test_invalid_edit_saves_and_sends_nothing(pipeline, waiting, storage):
 
 
 def test_failed_send_offers_a_retry(pipeline, waiting):
-    pipeline.error = ConnectionError("Slack is down")
+    pipeline.error = ConnectionError("Slack is down")  # stands in for detail the page must hide
     app = run()
     for draft_id in waiting:
         app.radio(key=f"draft-{draft_id}-decision").set_value("Approve")
     app.button[0].click().run()
-    assert "Slack is down" in app.error[0].value
+    assert "Sending failed" in app.error[0].value
+    assert "Slack is down" not in app.error[0].value
 
     pipeline.error = None
     app = run()

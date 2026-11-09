@@ -1,9 +1,14 @@
+import logging
+
 import streamlit as st
 from meeting_agent.config import Settings
 from meeting_agent.pipeline import ReviewError
 from meeting_agent.schemas import DraftStatus, Priority, TicketDraft, TranscriptStatus
 from meeting_agent.service import SetupError, build_app
 from pydantic import ValidationError
+
+
+logger = logging.getLogger(__name__)
 
 
 @st.cache_resource
@@ -73,8 +78,10 @@ def finish(pipeline, transcript) -> None:
         pipeline.finish_review(transcript.file_id, transcript.revision)
     except ReviewError as exc:
         st.error(str(exc))
-    except Exception as exc:
-        st.error(f"Sending failed, and you can retry without creating duplicates: {exc}")
+    except Exception:
+        # The details go to the server log, because they can include fragments of credentials.
+        logger.exception("Sending failed for %s", transcript.name)
+        st.error("Sending failed. You can retry without creating duplicates.")
     else:
         st.rerun()
 
